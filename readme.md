@@ -1,8 +1,11 @@
-### Todo
+### AnyArt challenge
 
 ---
 
 __Fletcher (Property Retriever)__
+```php
+$ php fletcher.php
+```
 * Concurrent requests to API via Guzzle
 * Simple DB class to upload data
 * todo:
