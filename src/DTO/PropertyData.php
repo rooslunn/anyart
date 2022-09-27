@@ -6,12 +6,10 @@ use stdClass;
 
 final class PropertyData
 {
-    private readonly stdClass $json;
-
-    private function __construct(stdClass $json)
-    {
-        $this->json = $json;
-    }
+    private function __construct(
+        private readonly stdClass $json
+    )
+    {}
 
     public function exportForDb(): array
     {
