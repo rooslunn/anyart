@@ -1,0 +1,29 @@
+{
+    "name": "rkladko/anyart",
+    "description": "Test assignment",
+    "type": "project",
+    "require": {
+        "php": "^8.0",
+        "ext-curl": "*",
+        "guzzlehttp/guzzle": "^7.5",
+        "guzzlehttp/psr7": "^2.4",
+        "guzzlehttp/promises": "^1.5",
+        "vlucas/phpdotenv": "^5.4"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rkladko\\Anyart\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ruslan Kladko",
+            "email": "rkladko@gmail.com"
+        }
+    ]
+}
