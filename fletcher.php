@@ -83,7 +83,7 @@ $requests = static function ($total) {
 };
 
 $pool = new Pool($client, $requests($total_pages), [
-    'concurrency' => 1,
+    'concurrency' => 5,
     'fulfilled' => static function (Response $response, $index) use ($db_storage) {
         info('Processing page: ' . $index);
         process_body($response->getBody(), $db_storage);
