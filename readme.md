@@ -2,7 +2,7 @@
 
 ---
 
-__Fletcher (Property Retriever)__
+__API Integration (Fletcher)__
 ```php
 $ php fletcher.php
 ```
@@ -12,6 +12,8 @@ $ php fletcher.php
   * error: 429 Too Many Requests
   * error: Syntax error or access violation: 1064...
 
-__Property Viewer__
+__Interface__
 * Backend MVC
 * Frontend (Bootstrap, FetchApi, etc.)
+* todo:
+  * paginator
