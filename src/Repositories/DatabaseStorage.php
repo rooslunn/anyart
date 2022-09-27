@@ -47,4 +47,10 @@ final class DatabaseStorage implements PropertyStorage
         $sql = sprintf('truncate %s', self::PROPERTY_TABLE);
         $this->db->query($sql)->execute();
     }
+
+    public function paginate(int $perPage = 20): array
+    {
+        $sql = 'select id, town, num_bedrooms, price, prop_type_title, sale_or_rent from properties limit ' . $perPage;
+        return $this->db->query($sql)->fetchAll();
+    }
 }

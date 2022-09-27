@@ -10,7 +10,6 @@ final class Db
 {
     private PDO $dbh;
     private PDOStatement $stmt;
-    private string $error;
 
     public function __construct(
         private readonly string $host,
@@ -86,8 +85,8 @@ final class Db
                 $dsn, $this->db_user, $this->db_pass, $options
             );
         } catch (Throwable $th) {
-            $this->error = $th->getMessage();
-            echo $this->error;
+            $error = $th->getMessage();
+            echo $error;
         }
     }
 
