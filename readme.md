@@ -17,3 +17,4 @@ __Interface__
 * Frontend (Bootstrap, FetchApi, etc.)
 * todo:
   * paginator
+  * full filtering
